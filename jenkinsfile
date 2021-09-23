@@ -27,6 +27,6 @@ node ('DOTNETCORE') {
     }
     stage('Archive') {
         echo 'Archiving....'
-	archiveArtifacts artifacts: '/var/jenkins_home/workspace/AutomatingGroovy/releasenotes.txt', fingerprint: true
+	archiveArtifacts artifacts: '/var/jenkins_home/workspace/AutomatingGroovy/*.*', fingerprint: true
     } 
 }
