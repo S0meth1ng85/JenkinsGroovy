@@ -9,7 +9,7 @@ node ('DOTNETCORE') {
 	sh 'dotnet --version'
 	sh "dotnet build ConsoleApp1"
 	echo 'Building New Feature'
-	getgroovy()
+	sh(getGroovy() + ' --version')
 	releasenotes()
       }catch(ex){
     	    echo 'Something went wrong'
