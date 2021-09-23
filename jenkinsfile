@@ -1,4 +1,4 @@
-node {
+node ('master') {
     stage('SCM') {
 	echo 'Gathering code from version control'
 	git branch: '${branch}', url: 'https://github.com/S0meth1ng85/JenkinsGroovy.git'
