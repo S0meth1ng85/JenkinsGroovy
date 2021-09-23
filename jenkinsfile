@@ -8,7 +8,7 @@ node {
         echo 'Building....'
 	sh 'dotnet --version'
 	sh "dotnet build ConsoleApp1"
-	sh 'Building New Feature'
+	echo 'Building New Feature'
 	releasenotes()
     }catch(ex){
     	    echo 'Something went wrong'
