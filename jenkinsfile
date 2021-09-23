@@ -13,7 +13,7 @@ node {
     }catch(ex){
     	    echo 'Something went wrong'
 	    echo ex.toString();
-	    currentBUild.result = 'FAILURE'
+	    currentBiild.result = 'FAILURE'
 	    }
 	    finally{
 	    //cleanup
