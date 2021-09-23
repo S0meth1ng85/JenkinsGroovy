@@ -10,7 +10,7 @@ node {
 	sh "dotnet build ConsoleApp1"
 	echo 'Building New Feature'
 	releasenotes()
-    }catch(ex){
+      }catch(ex){
     	    echo 'Something went wrong'
 	    echo ex.toString();
 	    currentBuild.result = 'FAILURE'
@@ -18,7 +18,7 @@ node {
 	    finally{
 	    //cleanup
 	    }
-}	    
+    }	    
     stage('Test') {
         echo 'Testing....'
     }
